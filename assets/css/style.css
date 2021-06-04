@@ -611,6 +611,30 @@ section {
   text-decoration: none;
 }
 
+.about .image {
+  text-align: center;
+
+}
+.about .image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+  .about .image {
+    text-align: center;
+  }
+  .about .image img {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 667px) {
+  .about .image img {
+    max-width: 100%;
+  }
+}
+
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
@@ -675,20 +699,8 @@ section {
   color: #6f6f6f;
 }
 
-@media (max-width: 1024px) {
-  .counts .image {
-    text-align: center;
-  }
-  .counts .image img {
-    max-width: 70%;
-  }
-}
 
-@media (max-width: 667px) {
-  .counts .image img {
-    max-width: 100%;
-  }
-}
+
 
 /*--------------------------------------------------------------
 # Services
